@@ -1,0 +1,28 @@
+server: 146.56.101.3:58802
+
+auth: cfc4466f
+
+
+tls:
+ sni: www.bing.com
+ insecure: true
+  
+quic:
+ initStreamReceiveWindow: 16777216
+ maxStreamReceiveWindow: 16777216
+ initConnReceiveWindow: 33554432
+ maxConnReceiveWindow: 33554432
+
+
+bandwidth: 
+ up: 150 mbps
+ down: 200 mbps
+
+
+fastOpen: true
+
+
+socks5:
+ listen: 127.0.0.1:1080
+http:
+ listen: 127.0.0.1:1081
